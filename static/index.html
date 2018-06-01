@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Leaf Classification</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Leaf Classification</a>
+      </div>
+    </div>
+  </div>
+  <div id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h1>Discover 5 Species of Leaves</h1>
+          <h3 class= "subtitle">Finds out <b>Euphorbia Mili, Excoecaria, Garden Croton, Chinese Tallow,</b> and <b>Hevea Brasilinsis</b></h3>
+            <div class="form-group">
+              <input type="file" accept="image/*;device=camera" style="background-color:rgba(14, 12, 12, 0.521); color:rgba(255, 255, 255, 0.822);" class="form-group" id="fileField" name="fileField" />
+            </div>
+            
+            <form method="POST" action="/daun" class="form-inline signup" role="form">
+            <button type="submit" class="btn btn-theme">Classify!</button>
+            </form>
+            <br>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+        <img style="width:150px; height:150px;" class = "circle shadow" src = "assets/img/mili.jpg">
+        
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+        <img style="width:150px; height:150px;" class = "circle shadow" src = "assets/img/excoe.jpg">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+        <img style="width:150px; height:150px;" class = "circle shadow" src = "assets/img/croton.jpg">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+        <img style="width:150px; height:150px;" class = "circle shadow" src = "assets/img/tallow.jpg">
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+        <img style="width:150px; height:150px;" class = "circle shadow" src = "assets/img/hevea.jpg">
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+
+
+</html>
