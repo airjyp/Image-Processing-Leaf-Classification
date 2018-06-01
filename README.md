@@ -8,5 +8,5 @@ Classify leaves of 5 species with Image processing using Decision tree, such as:
 
 Preview :
 
-(https://github.com/airjyp/Image-Processing-Leaf-Classification/blob/master/classify.png)
-(https://github.com/airjyp/Image-Processing-Leaf-Classification/blob/master/result.png)
+![content_setting](https://github.com/airjyp/Image-Processing-Leaf-Classification/blob/master/classify.png)
+![content_setting](https://github.com/airjyp/Image-Processing-Leaf-Classification/blob/master/result.png)
