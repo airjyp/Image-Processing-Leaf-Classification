@@ -4,10 +4,11 @@
 <head>
     <title>Leaf Classification</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="">
     <meta name="author" content="">
+    <link href="{{ url_for('static',filename='assets/css/aos.css') }}" rel="stylesheet">
     <link href="{{ url_for('static',filename='assets/css/bootstrap1.css') }}" rel="stylesheet">
     <link href="{{ url_for('static',filename='assets/css/bootstrap-theme.css') }}" rel="stylesheet">
     <link href="{{ url_for('static',filename='assets/css/style1.css') }}" rel="stylesheet">
@@ -24,16 +25,21 @@
   <div id="header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-10">
-          <center><h1>Result of Classification</h1>
-          <!-- <h3 class= "subtitle">Finds out <b>Euphorbia Mili, Excoecaria, Garden Croton, Chinese Tallow,</b> and <b>Hevea Brasilinsis</b></h3> -->
-          <img style="width:375px; height:375px;" id="imageID" class="img-responsive shadow semicircle" src="/currentimage" />
-          <h3 class= "subtitle">The classification of this species belongs to :</b></h3>
-          <h2><b>{{prediksi}}</b></h2></center><br>
-
-      </div>
+        <div class="col-lg-10"  data-aos="fade-bottom" data-aos-duration="1800">
+        	<center><h1>Result of Classification</h1>
+        		<img style="width:375px; height:375px;" id="imageID" class="img-responsive shadow semicircle" src="/currentimage" />
+        		<h3 class= "subtitle">The classification of this species belongs to :</b></h3>
+        		<h2><b>{{prediksi}}</b></h2>
+        	</center><br>
+        </div>
     </div>
-  </div>
+</div>
 </body>
+<script src="{{ url_for('static',filename='aos.js') }}"></script>
+  <script type="text/javascript">
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
 
 </html>

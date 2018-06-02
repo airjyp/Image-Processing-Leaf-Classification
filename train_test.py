@@ -9,6 +9,7 @@ import csv
 import pandas
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.model_selection import KFold, StratifiedKFold
+from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from sklearn.tree import DecisionTreeClassifier
 
@@ -78,7 +79,14 @@ num = 102
 
 # create all the machine learning models
 models = []
-models.append(('DECISION TREE ACCURACY', DecisionTreeClassifier(random_state=num)))
+#models.append(('DECISION TREE ACCURACY', DecisionTreeClassifier(random_state=num)))
+models.append(('ANN ACCURACY', MLPClassifier(activation='relu', alpha=1e-05, batch_size='auto',
+       beta_1=0.9, beta_2=0.999, early_stopping=False,
+       epsilon=1e-08, hidden_layer_sizes=(5, 2), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=num, shuffle=True,
+       solver='lbfgs', tol=0.0001, validation_fraction=0.1, verbose=False,
+       warm_start=False)))
 
 # variables to hold the results and names
 results = []
@@ -102,7 +110,14 @@ for name, model in models:
 import matplotlib.pyplot as plt
 
 # create the model - Random Forests
-clf  =  DecisionTreeClassifier(random_state=num)
+#clf  =  DecisionTreeClassifier(random_state=num)
+clf  =  MLPClassifier(activation='relu', alpha=1e-05, batch_size='auto',
+       beta_1=0.9, beta_2=0.999, early_stopping=False,
+       epsilon=1e-08, hidden_layer_sizes=(5, 2), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=num, shuffle=True,
+       solver='lbfgs', tol=0.0001, validation_fraction=0.1, verbose=False,
+       warm_start=False)
 # fit the training data to the model
 clf.fit(data,kelas)
 

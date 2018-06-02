@@ -127,10 +127,10 @@ a.navbar-brand:hover {
 #header {	
 	background-color: rgba(68, 68, 68, 0.096);
 	background: url(../img/leaves3.jpg) no-repeat center top;
-	padding-top: 20px;
+    padding-top: 20px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 651px;
+	min-height: 653px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
